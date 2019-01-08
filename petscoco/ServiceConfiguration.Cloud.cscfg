@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="petscoco" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="5" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="WebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="minghl" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEDH0B9V0ZlKoQ1W9Ki5mh8MwDQYJKoZIhvcNAQEBBQAEggEAm6UaM2On50Of12WQSP5jPL2sLk1IChzjGeVLbvYP7od9NGIWjtuQbK2GiXqOuJ/QpGe+SV4aaj8wNnYWEO7WrSZoErHoo0/Ur0rpIXgoHUNMus/YiDCT8Zl5ZZSU9rzIfNPAcQiS5dyY2ezwEw2ak9DECZ0fyn5pJr+rvHvWE3Mk+scO2RT0JQCJTEWoSjjDkYRHBc0TK6m12rlYqruQHOnyPnZkKI3XTB/j7w8C3F7+Hs3f3msVMrq7itxD4cPvb02C37pxALRCFM3qiLKkki13mHF6PfeTFzwFdY9xLW/Nsfup6d5chf7bwyVxGWnJw6snv0wb+d3QJOQal/GNLDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECNnIVqWrYAlHgBB/U8fJSYmHLeoNPSmU5yd2" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2020-01-08T23:59:59.0000000+08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="7C588A3156E5A38DCA1442F00B1A698AC8648AE9" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
